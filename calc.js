@@ -29,7 +29,6 @@ let cover_output = document.querySelector("#cover");
 function compute(fw, fh) {
   let outerw = endToOuter(fw, fh)[0];
   let outerh = endToOuter(fw, fh)[1];
-  console.log(endToOuter(fw, fh))
   let innerw = endToInner(fw, fh)[0];
   let innerh = endToInner(fw, fh)[1];
   let coverw = endToCover(fw, fh)[0];
@@ -51,11 +50,8 @@ make_bag_button.addEventListener('click', () => {
   let width = parseFloat(document.getElementById("width").value);
   let height = parseFloat(document.getElementById("height").value);
   let boxed_corner = parseFloat(document.getElementById("boxed-corner").value);
-  if (width != NaN && height != NaN && boxed_corner != NaN) {
-    console.log(width);
-    console.log(height);
-    compute(width, height);
+  if (isNaN(width) || isNaN(height) || isNaN(boxed_corner)) {
   } else {
-
+    compute(width, height);
   }
 })

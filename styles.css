@@ -1,9 +1,20 @@
+@font-face {
+  font-family: shoreline-font;
+  src: url(assets/fonts/Shoreline.otf);
+}
+
+@font-face {
+  font-family: frolic;
+  src: url(assets/fonts/Frolic-Regular.otf);
+}
+
 :root {
-  --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --main-color: rgb(148, 43, 43);
-  --bolded-color: rgb(105, 27, 27);
-  --second-color: white;
-  --third-color: rgb(225, 225, 225)
+  --main-font: frolic, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --main-color: #C1D0B5;
+  --bolded-color: #b7c6ac;
+  --second-color: #F8F6F4;
+  --font-color: black;
+  --third-color: rgb(230, 230, 220);
 }
 
 html,
@@ -73,13 +84,13 @@ body {
   align-items: center;
   justify-content: start;
   width: 60%;
-  color: var(--second-color);
+  color: var(--font-color);
   background-color: var(--third-color);
 }
 
 h1 {
   margin: 20px;
-  color: var(--main-color);
+  color: var(--font-color);
 }
 
 .text-container {
@@ -110,7 +121,7 @@ h1 {
   align-items: center;
   text-align: center;
   background-color: var(--second-color);
-  color: var(--main-color);
+  color: var(--font-color);
 
 }
 
@@ -140,9 +151,9 @@ h1 {
 
 label {
   font-size: 0.8em;
-  color: var(--third-color);
+  color: var(--font-color);
   font-weight: bold;
-  border-color: var(--third-color);
+  border-color: var(--font-color);
   border-radius: 1px;
 }
 
@@ -162,12 +173,12 @@ input:hover {
 
 button {
   padding: 8px 16px;
-  color: var(--main-color);
-  border: 3px solid var(--main-color);
+  color: var(--font-color);
+  border: 3px solid var(--font-color);
   border-radius: 10px;
   background: var(--second-color);
   font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: var(--main-font);
   cursor: pointer;
   margin: 20px;
   transition: 0.8s;
@@ -180,7 +191,7 @@ button:hover {
 }
 
 p {
-  color: var(--main-color);
+  color: var(--font-color);
   margin: 0px 20px;
 
 }
