@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="calc.js" defer></script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="container">
+    <div id="img-container">
+      <img id="food" src="assets/food.jpg">
+      <div id="logo-container">
+        <img id="logo" src="assets/logo.png">
+      </div>
+    </div>
+    <div id="right-container">
+      <div class="text-container">
+        <h1> Create a new Bag </h1>
+        <!-- <img id="cornell-logo" src="assets/cornell-logo.png"> -->
+      </div>
+      <h1> Calculate Bag Dimensions </h1>
+      <div id="interact-container">
+        <div id="input-container">
+          <h1> Input </h1>
+          <form id="make-account">
+            <div class="group">
+              <label for="width"> Desired Width (inches) </label>
+              <input type="number" id="width" name="user_width" />
+            </div>
+            <div class="group">
+              <label for="height"> Desired Height (inches) </label>
+              <input type="number" id="height" name="user_height" />
+            </div>
+            <div class="group">
+              <label for="boxed-corner"> Boxed Corner (inches) </label>
+              <input type="number" id="boxed-corner" name="user_boxed-corner" />
+            </div>
+          </form>
+        </div>
+        <div id="output-container">
+          <h1> Output</h1>
+          <div class="group">
+            <label for="o-layer"> Outer Layer </label>
+            <div id="o-layer" class="output"> </div>
+          </div>
+          <div class="group">
+            <label for="i-layer"> Inner Layer </label>
+            <div id="i-layer" class="output"> </div>
+          </div>
+          <div class="group">
+            <label for="cover"> Cover </label>
+            <div id="cover" class="output"> </div>
+          </div>
+        </div>
+      </div>
+      <button id="make-bag"> Make Bag</button>
+      <p> Enjoy!</p>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
